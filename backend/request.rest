@@ -1,0 +1,8 @@
+# if we make a user and hit the 'send request'
+# we will see if we successfully make a user
+# if we send a request to an existing user
+# we will get back the same ID
+POST http://localhost:3001/authenticate
+Content-Type: application/json
+
+{"username" : "Nestor"}
