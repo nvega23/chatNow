@@ -31,6 +31,14 @@ body {
   padding-bottom: 12px;
 }
 
+.form-title-text{
+  font-family: 'Avenir';
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 0.5px;
+  color: #e8e8e8;
+}
+
 .form-subtitle {
   font-size: 18px;
   font-family: 'Avenir';
