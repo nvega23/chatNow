@@ -14,3 +14,8 @@
 
 4. User can have multiple chats with notifications, when there is a new message
 <img width="1440" alt="Screenshot 2023-05-22 at 11 41 01 PM" src="https://github.com/nvega23/chatNow/assets/93811834/bad5e555-75da-47ff-86ae-af8dc03bf158">
+
+##  to run this app
+# backend directory and enter nodemon index.html
+# frontend and enter npm start dev
+
