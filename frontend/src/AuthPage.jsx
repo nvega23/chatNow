@@ -25,21 +25,23 @@ const AuthPage = (props) => {
 
     return (
       <>
-        <div className="background">
+        <div className="navbar">
           <div className={`menu-toggle ${menuOpen ? 'open' : ''}`} onClick={toggleMenu}>
-          <div className="hamburger-line"></div>
-          <div className="hamburger-line"></div>
-          <div className="hamburger-line"></div>
+            <div className="hamburger-line"></div>
+            <div className="hamburger-line"></div>
+            <div className="hamburger-line"></div>
+          </div>
+          <nav className={`menu ${menuOpen ? 'open' : ''}`}>
+            <ul className="menu-items">
+              <li><a target="_blank" href="https://github.com/nvega23">Github</a></li>
+              <li><a target="_blank" href="https://www.linkedin.com/in/nestor-vega-233b43238/">Linkedin</a></li>
+              <li><a target="_blank" href="https://angel.co/u/nestorvega23">Wellfound</a></li>
+              <li><a target="_blank" href="https://twitter.com/nvega24">Twitter</a></li>
+              <li><button className="dropdown" onClick={() => openExternalSite(window.open('mailto:vega.nestor1@gmail.com?subject=subject&body=body'))}><a className="twitterLink">Email The Developer</a></button></li>
+            </ul>
+          </nav>
         </div>
-        <nav className={`menu ${menuOpen ? 'open' : ''}`}>
-          <ul className="menu-items">
-            <li><a target="_blank" href="https://github.com/nvega23">Github</a></li>
-            <li><a target="_blank" href="https://www.linkedin.com/in/nestor-vega-233b43238/">Linkedin</a></li>
-            <li><a target="_blank" href="https://angel.co/u/nestorvega23">Wellfound</a></li>
-            <li><a target="_blank" href="https://twitter.com/nvega24">Twitter</a></li>
-            <li><button className="dropdown" onClick={() => openExternalSite(window.open('mailto:vega.nestor1@gmail.com?subject=subject&body=body'))}><a className="twitterLink">Email The Developer</a></button></li>
-          </ul>
-        </nav>
+        <div className="background">
           <form onSubmit={onSubmit} className="form-card">
             <div className="form-title">Welcome 👋</div>
             <div className="form-title-text">Connecting Worlds, One Chat at a Time!</div>
