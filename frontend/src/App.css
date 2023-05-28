@@ -10,7 +10,7 @@ body {
 /* Define the animation */
 @keyframes scrollAnimation {
   0% {
-    background-position: 0% 0%; /* Starting position of the gradient */
+    background-position: 0% 0%;
   }
   100% {
     background-position: 100% 0%; /* Ending position of the gradient */
